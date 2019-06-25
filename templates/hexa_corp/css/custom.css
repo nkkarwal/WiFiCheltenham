@@ -1,0 +1,484 @@
+/* Add your own custom css to this file. You may wish to use css !important calls to override css from the template css files.
+----------------------------------------------------------- */
+
+
+#s5_pos_custom_3_4_wrap .custom .video_wrap{
+	background:url('http://lamp.softprodigyphp.in/Wificheltenham/images/bannerNew.jpg') no-repeat !important;
+	background-size: cover !important;
+	margin-bottom:4vw
+}
+#s5_pos_custom_3_4_wrap .custom .video_wrap .video_overlay{
+	display:none
+}
+body #s5_top_row1_area1{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#053aa7+0,4a6cff+100 */
+	background:none !important
+}
+body #s5_top_row1_area_inner{
+	width:100%;
+	max-width:100% !important
+}
+body #s5_top_row1_area_inner #s5_top_row1_wrap{
+	padding:0px;
+	margin:0px;
+}
+body #s5_top_row1_area_inner #s5_top_row1_wrap .module_round_box_outer{
+	margin:0px;
+}
+
+body #s5_top_row1_area_inner #s5_top_row1_wrap .pages_highlight_box{
+	padding:4vw 0;
+	font-size: 16px;
+    color: #fff;
+    line-height: 180%;
+	position:relative;
+	background: rgb(5,58,167) !important; /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(5,58,167,1) 0%, rgba(74,108,255,1) 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(5,58,167,1) 0%,rgba(74,108,255,1) 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(5,58,167,1) 0%,rgba(74,108,255,1) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053aa7', endColorstr='#4a6cff',GradientType=1 ) !important; /* IE6-9 */
+}
+#subMenusContainer div.s5_sub_wrap ul, .S5_subtext, .S5_menu_module_group .moduletable{
+	background: rgb(5,58,167) !important; /* Old browsers */
+	 
+}
+body #s5_top_row1_area_inner #s5_top_row1_wrap .pages_highlight_box:after{
+	content: "";
+    background: url(http://lamp.softprodigyphp.in/Wificheltenham/images/updatedPng.png) no-repeat;
+    height: 30vw;
+    display: block;
+    margin-bottom: -15vw;
+    background-size: contain;
+    width: 100%;
+    background-position: center;
+    margin-top: 2vw;
+	position:relative;
+	z-index:99
+}
+
+body #s5_top_row1_area_inner #s5_top_row1_wrap .pages_highlight_box:before{
+	content: "";
+    background: url(http://lamp.softprodigyphp.in/Wificheltenham/images/shape1.png) no-repeat;
+    height: 30vw;
+    display: block;
+    margin-bottom: -9vw;
+    background-size: contain;
+    width: 100%;
+    background-position: center;
+    margin-top: 2vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.custom-button-wraper1{
+	text-align:center
+}
+.custom-button-wraper1 button{
+	background-image: -moz-linear-gradient( 180deg, rgb(17,237,240) 0%, rgb(28,82,219) 100%);
+  background-image: -webkit-linear-gradient( 180deg, rgb(17,237,240) 0%, rgb(28,82,219) 100%);
+  background-image: -ms-linear-gradient( 180deg, rgb(17,237,240) 0%, rgb(28,82,219) 100%);
+  border-radius:0px;
+    padding: 26px 40px;
+    font-size: 20px;
+  margin-right:10px;
+}
+
+.about-footer{
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    font-size: 26px;
+	justify-content:center
+}
+.about-footer br{
+	display:none;
+}
+.about-footer .readmore{
+	margin:0px;
+	margin-top:15px
+}
+.about-footer .readmore a{
+	font-size: 20px;
+    padding: 22px 46px;
+    margin-top: 4px;
+}
+
+.custom-button-wraper1 button:nth-child(2){
+	 background-image: -moz-linear-gradient( 180deg, rgb(28,82,219) 0%, rgb(17,237,240) 100%);
+  background-image: -webkit-linear-gradient( 180deg, rgb(28,82,219) 0%, rgb(17,237,240) 100%);
+  background-image: -ms-linear-gradient( 180deg, rgb(28,82,219) 0%, rgb(17,237,240) 100%);
+
+}
+body #s5_top_row1_area_inner #s5_top_row1_wrap .pages_highlight_box > div,
+.moduletable .custom .icon_image_box_wrap{
+	max-width:1300px;
+	margin: auto;
+}
+p.readmore a, p.readmore {
+    display: inline-block;
+}
+
+.moduletable .custom .icon_image_box_wrap{
+	display: grid;
+	max-width:1200px;
+	margin:auto;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 14vw;
+	grid-gap: 50px;
+	padding: 2vw 4vw;
+	padding-bottom: 5vw; 
+}
+.moduletable .custom .icon_image_box_outer .icon_image_box,
+.moduletable .custom .icon_image_box_outer {
+	margin:0px;
+	padding:0px;
+	width:auto;
+	padding:0px;
+}
+.icon_image_box_wrap .icon_image_box_outer{}
+.moduletable .custom .icon_image_box_outer .icon_image_box{
+	background: #fff;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	border-radius: 5px;
+	padding:2vw 1.0vw !important ;
+	display: flex;
+	flex-direction: column;
+	position:relative;
+	padding-bottom:3vw !important
+}
+.moduletable .custom .icon_image_box_outer{
+	display:flex;
+	flex-direction: column;
+	height:100%;
+}
+.moduletable .custom .icon_image_box_outer img{
+	height: 200px !important;
+	object-fit: contain;
+}
+body .icon_image_box span.icon_image_box_text{
+	padding: 5% 0;
+	font-size: 15px;
+	line-height: 155%;
+	color: #000;
+}
+body .icon_image_box h3{
+	color:#000
+}
+.moduletable .custom .icon_image_box_outer .icon_image_box h3{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: -8px;
+}
+.moduletable .custom .icon_image_box_outer .icon_image_box .icon_outer_wrap{
+	margin-top: -50px;
+	place-items: last baseline;
+	align-items: last baseline;
+	order: 2;
+	position: absolute;
+	bottom: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70px;
+	height: 70px;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+}
+
+ 
+body #s5_bottom_row2_area_inner #s5_bottom_row2_wrap {
+    display: grid;
+    border: 0;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px;
+    padding-top: 30px;
+}
+body #s5_bottom_row2_area_inner #s5_bottom_row2_wrap .s5_masonry_pretext .large_split_title span{
+	display:none;
+}
+body #s5_bottom_row2_area_inner #s5_bottom_row2_wrap .s5_masonry_pretext .large_split_title h3,
+body #s5_pos_top_row1_1 .module_round_box_outer .module_round_box .s5_mod_h3{
+	font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 100px;
+    position: relative;
+}
+body #s5_bottom_row2_area_inner #s5_bottom_row2_wrap .s5_masonry_pretext .large_split_title h3:after,
+body #s5_pos_top_row1_1 .module_round_box_outer .module_round_box .s5_mod_h3:after{
+	content: "";
+    width: 180px;
+    height: 5px;
+    background: #11edf0;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    right: 0;
+    margin: auto;
+}
+#s5_masonry_navwrap{
+	display:none
+}
+body #s5_bottom_row2_area_inner #s5_bottom_row2_wrap .module_round_box_outer{
+	margin:0px;
+}
+body #s5_bottom_row2_area_inner #s5_bottom_row2_wrap .s5_mason_it_wrap{
+	line-height: 200% !important;
+    font-size: 13px;
+}
+
+#s5_masonry_form_outer_wrap #s5_masondisplay_container{
+	height: auto !important;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    grid-gap: 0px;
+    display: grid;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+#s5_masonry_form_outer_wrap #s5_masondisplay_container .item{
+	position: relative !important;
+	left: 0 !important;
+	top: 0 !important;
+	width: 100%;
+}
+#s5_masonry_form_outer_wrap #s5_masondisplay_container .item:nth-child(2) .s5_masonwrapinner {
+	display: flex;
+    flex-direction: column-reverse;
+}
+#s5_masonry_form_outer_wrap #s5_masondisplay_container .item .readmore {
+	display:none
+}
+#s5_masonry_form_outer_wrap #s5_masondisplay_container .item .s5_masonwrapinner {
+	margin:0px !important;
+}
+#s5_masonry_form_outer_wrap #s5_masondisplay_container .item .s5_masonry_img_wrap{
+	height: 386px;
+    overflow: hidden;
+    background: blue;
+	display:flex;
+}
+#s5_masonry_form_outer_wrap #s5_masondisplay_container .item .s5_masonry_img_wrap a{
+	height:100%;
+}
+#s5_masonry_form_outer_wrap #s5_masondisplay_container .item .s5_masonry_img_wrap img{
+	width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+#s5_masonry_form_outer_wrap #s5_masondisplay_container .item .s5_mason_abi_wrap {
+	height: 347px;
+    overflow: hidden;
+ 
+    padding: 19px !important;
+}
+body .s5_masoncat {
+    background: #fff none repeat scroll 0 0;
+    padding: 1% 4%;
+    font-size: 0.9em;
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+
+/*CONTACT US PAGE*/
+body .contact{
+	display: flex;
+	flex-direction: column;
+}
+body .contact .page-header{
+	display:none;
+}
+body .contact .contact-address.dl-horizontal{
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+    padding: 4vw 2vw 6vw;
+    text-align: center;
+    border: 1px solid #ddd;
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 20px;
+}
+body .contact .contact-address.dl-horizontal [class*="class"]{
+	box-shadow:0 0 10px rgba(0,0,0,0.1);
+	padding:1vw;
+	background: rgb(5,58,167) !important;
+	background: -moz-linear-gradient(left, rgba(5,58,167,1) 0%, rgba(74,108,255,1) 100%) !important;
+	background: -webkit-linear-gradient(left, rgba(5,58,167,1) 0%,rgba(74,108,255,1) 100%) !important;
+	background: linear-gradient(to right, rgba(5,58,167,1) 0%,rgba(74,108,255,1) 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053aa7', endColorstr='#4a6cff',GradientType=1 ) !important;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	/* flex-direction: column; */
+	line-height: 90%;
+    color: #fff;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+	align-content: baseline;
+	position:relative;
+	margin-top:-100px
+}
+body .contact .contact-address.dl-horizontal [class*="class"] dt{
+	width:100%;
+	text-transform:uppercase;
+	position:relative
+}
+body .contact .contact-address.dl-horizontal [class*="class"] br{
+	display:none
+}
+body .contact .dl-horizontal dd{
+	margin:0px;
+}
+body .contact .dl-horizontal dd:before{
+	display:none;
+}
+body .contact dd, body .contact dt {
+    line-height: 195% !important;
+}
+body .contact .contact-address.dl-horizontal [class*="class"]:after{
+	content: "";
+	background: url(http://lamp.softprodigyphp.in/Wificheltenham/images/address.svg) no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	 
+	background-position: center center;
+	opacity: 0.1;
+}
+body .contact h3{
+	font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 100px;
+    position: relative;
+}
+body .contact h3:after {
+    content: "";
+    width: 180px;
+    height: 5px;
+    background: #11edf0;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    right: 0;
+    margin: auto;
+}
+body .contact #contact-form legend,
+body .contact #contact-form .field-spacer{
+	display:none;
+}
+body .contact #contact-form .feildset{
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-top: -50px;
+}
+body .contact #contact-form fieldset .control-group{
+	width:50%;
+	float:left
+}
+body .contact #contact-form .control-group .controls{
+	margin:0px;
+}
+body .contact #contact-form .control-group .controls input,
+body .contact #contact-form .control-group .controls textarea{
+	width: 100%;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    padding: 10px;
+    height: auto;
+	margin:0px;
+}
+body .contact #contact-form .control-group .controls textarea{
+	height:235px;
+}
+body .contact #contact-form .control-group:nth-child(6){
+	grid-column: 2;
+    grid-row: 1 / 6;
+}
+body .contact #contact-form .control-group:nth-child(7){
+	border: 1px solid blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7; 
+	display:none
+}
+body .contact #contact-form .control-group .controls{
+	text-align:center
+}
+body .contact #contact-form .control-group .controls .btn-primary{
+	background-image: -moz-linear-gradient( 180deg, rgb(17,237,240) 0%, rgb(28,82,219) 100%);
+	background-image: -webkit-linear-gradient( 180deg, rgb(17,237,240) 0%, rgb(28,82,219) 100%);
+	background-image: -ms-linear-gradient( 180deg, rgb(17,237,240) 0%, rgb(28,82,219) 100%);
+	padding: 16px 60px !important;
+    border-radius: 4px;
+	margin-top: -30px !important;
+}
+body  .contact-form label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+body  .contact .thumbnail{
+	display:none;
+}
+.contact-address ~ h3 {
+    display: none;
+}
+body .s5_masonry_pretext {
+    margin-bottom: 85px;
+    margin-top: -140px;
+}
+
+@media(max-width:767px){
+	.moduletable .custom .icon_image_box_wrap{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	body #s5_masonry_form_outer_wrap{
+		margin:0 !important
+	}
+	body #s5_masonry_form_outer_wrap #s5_masondisplay_container{
+		margin:0 !important
+	}
+	body #s5_masonry_form_outer_wrap #s5_masondisplay_container{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	body #s5_bottom_row2_area_inner #s5_bottom_row2_wrap .s5_masonry_pretext .large_split_title h3, 
+	body #s5_pos_top_row1_1 .module_round_box_outer .module_round_box .s5_mod_h3{
+		font-size: 30px;
+	}
+	body .about-footer .readmore a {
+		font-size: 14px;
+		padding: 15px 14px;
+		margin-top: 4px;
+	}
+	body .large_text{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

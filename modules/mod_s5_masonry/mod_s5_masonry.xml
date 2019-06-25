@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="upgrade">
+	<name>S5 Masonry</name>
+	<author>Shape5</author>
+	<creationDate>August 10th, 2017</creationDate>
+	<copyright>Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>2.9.7</version>
+	<description>S5 Masonry is a powerful module that pulls your article from categories and can display them in a masonry style format. The module automatically changes layout based on screen size. It has lots of options such as enabling or disabling different text areas, multiple layout options, number of items, and more.</description>
+	<files>
+		<filename module="mod_s5_masonry">mod_s5_masonry.php</filename>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_s5_masonry.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_s5_masonry.ini</language>
+		<language tag="en-GB">language/en-GB.mod_s5_masonry.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_S5_MASONRYFLASH" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="pretext" type="textarea" cols="40" rows="4" filter="raw" default="" label="Pre-Text" description="Enter any pre-text message." />
+				<field type="spacer" name="spacer_intro" label="&lt;span style=&quot;width:50%;padding:20px;border-top:1px solid #333;border-bottom:1px solid #333;display:block;&quot;&gt;
+				Use the Categories setting below to select categories to pull articles from. If you select 'All Categories', this will enable an 'All' button on the frontend and articles from all selected categories will show on page load. You must still select your desired categories, 'All Categories' simply enables this button and controls what loads on page load. If you omit 'All Categories' then only articles from the first category will show on page load, and the other categories can be selected manually using the category buttons on the frontend. The ordering of categories is determined by their order in the Content Category Manager of Joomla.
+				&lt;/span&gt;" />
+			
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					default=""
+					size="10"
+					label="MOD_S5_MASONRY_FIELD_CATEGORY_TITLE_LABEL"
+					description="MOD_S5_MASONRY_FIELD_CATEGORY_DESC" >
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+
+				<field
+					name="link_titles"
+					type="list"
+					label="MOD_S5_MASONRY_FIELD_LINKTITLE_LABEL"
+					description="MOD_S5_MASONRY_FIELD_LINKTITLE_DESC">
+					<option
+						value="">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+
+				<field
+					name="item_heading"
+					type="list"
+					default="h4"
+					label="MOD_S5_MASONRY_TITLE_HEADING"
+					description="MOD_S5_MASONRY_TITLE_HEADING_DESCRIPTION">
+					<option
+						value="h1">JH1</option>
+					<option
+						value="h2">JH2</option>
+					<option
+						value="h3">JH3</option>
+					<option
+						value="h4">JH4</option>
+					<option
+						value="h5">JH5</option>
+				</field>
+				
+				<field
+					name="item_title"
+					type="radio"
+					default="0"
+					label="MOD_S5_MASONRY_FIELD_TITLE_LABEL"
+					description="MOD_S5_MASONRY_FIELD_TITLE_DESC">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+				
+				<field
+					name="categoriesfend"
+					type="radio"
+					default="0"
+					label="MOD_S5_MASONRY_FIELD_SHCATEGORIES_LABEL"
+					description="MOD_S5_MASONRY_FIELD_SHCATEGORIES_DESC">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+				
+				<field
+					name="image"
+					type="radio"
+					default="0"
+					label="MOD_S5_MASONRY_FIELD_IMAGES_LABEL"
+					description="MOD_S5_MASONRY_FIELD_IMAGES_DESC">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+
+				<field
+					name="introtext"
+					type="radio"
+					default="0"
+					label="MOD_S5_MASONRY_FIELD_INTROTEXT_LABEL"
+					description="MOD_S5_MASONRY_FIELD_INTROTEXT_DESC">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+
+				<field
+					name="readmore"
+					type="radio"
+					default="0"
+					label="MOD_S5_MASONRY_FIELD_READMORE_LABEL"
+					description="MOD_S5_MASONRY_FIELD_READMORE_DESC">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+
+				
+				<field
+					name="showhits"
+					type="radio"
+					default="0"					
+					label="MOD_S5_MASONRY_FIELD_HITS_LABEL"
+					description="MOD_S5_MASONRY_FIELD_HITS_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field
+					name="showdate"
+					type="radio"
+					default="0"					
+					label="MOD_S5_MASONRY_FIELD_DATE_LABEL"
+					description="MOD_S5_MASONRY_FIELD_DATE_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field
+					name="showcategory"
+					type="radio"
+					default="0"					
+					label="MOD_S5_MASONRY_FIELD_CAT_LABEL"
+					description="MOD_S5_MASONRY_FIELD_CAT_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field
+					name="ordering"
+					type="list"
+					default="a.publish_up"
+					label="MOD_S5_MASONRY_FIELD_ORDERING_LABEL"
+					description="MOD_S5_MASONRY_FIELD_ORDERING_DESC">
+					<option value="a.publish_up">MOD_S5_MASONRY_FIELD_ORDERING_PUBLISHED_DATE</option>
+					<option	value="a.created">MOD_S5_MASONRY_FIELD_ORDERING_CREATED_DATE</option>
+					<option value="a.modified">MOD_S5_MASONRY_FIELD_ORDERING_MODIFIED_DATE</option>
+					<option	value="a.ordering">MOD_S5_MASONRY_FIELD_ORDERING_ORDERING</option>
+					<option value="a.hits">JGLOBAL_HITS</option>
+					<option	value="rand()">MOD_S5_MASONRY_FIELD_ORDERING_RANDOM</option>
+				</field>
+				
+				
+				<field
+					name="showonhover"
+					type="list"
+					default="0"					
+					label="MOD_S5_MASONRY_FIELD_HOVER_LABEL"
+					description="MOD_S5_MASONRY_FIELD_HOVER_DESC">
+					<option value="0">MOD_S5_MASONRY_FIELD_HOVER_VALUE0</option>
+					<option value="1">MOD_S5_MASONRY_FIELD_HOVER_VALUE1</option>
+					<option value="2">MOD_S5_MASONRY_FIELD_HOVER_VALUE2</option>
+				</field>
+				
+				<field
+					name="articlewidth"
+					type="list"
+					default="0"					
+					label="MOD_S5_MASONRY_FIELD_INTROART_LABEL"
+					description="MOD_S5_MASONRY_FIELD_INTROART_DESC">
+					<option value="0">MOD_S5_MASONRY_FIELD_INTROART_VALUE0</option>
+					<option value="3">MOD_S5_MASONRY_FIELD_INTROART_VALUE3</option>
+					<option value="4">MOD_S5_MASONRY_FIELD_INTROART_VALUE4</option>
+					<option value="5">MOD_S5_MASONRY_FIELD_INTROART_VALUE5</option>
+					<option value="6">MOD_S5_MASONRY_FIELD_INTROART_VALUE6</option>
+					<option value="2">MOD_S5_MASONRY_FIELD_INTROART_VALUE2</option>
+					<option value="1">MOD_S5_MASONRY_FIELD_INTROART_VALUE1</option>
+				</field>
+				
+								
+				<field
+					name="imagediv"
+					type="radio"
+					default="0"
+					label="MOD_S5_MASONRY_FIELD_IMAGESDIV_LABEL"
+					description="MOD_S5_MASONRY_FIELD_IMAGESDIV_DESC">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+				
+				<field
+					name="count"
+					type="text"
+					default="5"
+					label="MOD_S5_MASONRY_FIELD_ITEMS_LABEL"
+					description="MOD_S5_MASONRY_FIELD_ITEMS_DESC" />
+				<field
+					name="article_height"
+					type="text"
+					default=""
+					label="MOD_S5_MASONRY_FIELD_ARTICLE_HEIGHT_LABEL"
+					description="MOD_S5_MASONRY_FIELD_ARTICLE_HEIGHT_DESC" />
+				<field
+					name="load_more_articles"
+					type="text"
+					default="5"
+					label="MOD_S5_MASONRY_FIELD_LOAD_MORE_ARTICLE_LABEL"
+					description="MOD_S5_MASONRY_FIELD_LOAD_MORE_ARTICLE_DESC" />
+				<field
+					name="showhide"
+					type="list"
+					default="0"
+					label="MOD_S5_MASONRY_FIELD_SHOW_HIDE_LABEL"
+					description="MOD_S5_MASONRY_FIELD_SHOW_HIDE_DESC">
+					<option value="0">MOD_S5_MASONRY_FIELD_NONE</option>
+					<option value="1">MOD_S5_MASONRY_FIELD_LOADMORE</option>
+					<option value="2">MOD_S5_MASONRY_FIELD_SCROLL</option>
+				</field>
+
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
